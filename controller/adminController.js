@@ -1,7 +1,7 @@
 const Admin = require("../models/admin");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const Pagination = require("../pagination/Pagination");
+const Pagination = require("../pagination/pagination");
 
 const SignInValidation = require("../validation/signin");
 const SignUpValidation = require("../validation/signup");
