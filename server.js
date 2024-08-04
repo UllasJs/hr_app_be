@@ -12,9 +12,11 @@ app.use(cors());
 
 // // initialize router
 const adminRoute = require("./router/adminRouter");
+const empRoute = require('./router/empRouter')
 
-// // create routes for each routers
+// create routes for each routers
 app.use("/admin", adminRoute);
+app.use("/employ", empRoute)
 
 app.listen(port, () => {
   console.log(`App Listening on port ${port}`);
